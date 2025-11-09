@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LitnetX CRM - Pro Edition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <!-- LOGIN SCREEN -->
+  <div id="loginScreen" class="login-bg">
+    <div class="login-box">
+      <div class="logo-login">LitnetX CRM Pro</div>
+      <form id="loginForm">
+        <input id="loginUser" required placeholder="Username" autocomplete="username">
+        <input id="loginPass" type="password" required placeholder="Password" autocomplete="current-password">
+        <button type="submit" class="btn">Login</button>
+      </form>
+      <div id="loginMsg" class="error"></div>
+      <div class="note">
+        <b>Test Accounts:</b><br>
+        admin / test<br>
+        manager / manager<br>
+        sales / sales
+      </div>
+    </div>
+  </div>
+  <!-- MAIN APP -->
+  <div id="mainApp" style="display:none;">
+    <aside class="sidebar">
+      <div class="logo">LitnetX Pro</div>
+      <nav><ul id="navList"></ul></nav>
+      <div class="user-info" id="userInfo"></div>
+    </aside>
+    <main class="main">
+      <section id="dashboard" class="tab visible"></section>
+      <section id="leads" class="tab"></section>
+      <section id="contacts" class="tab"></section>
+      <section id="deals" class="tab"></section>
+      <section id="pipeline" class="tab"></section>
+      <section id="tasks" class="tab"></section>
+      <section id="calendar" class="tab"></section>
+      <section id="reports" class="tab"></section>
+      <section id="teams" class="tab"></section>
+      <section id="files" class="tab"></section>
+      <section id="profile" class="tab"></section>
+      <section id="settings" class="tab"></section>
+      <div class="modal-bg" id="modalBG" onclick="closeModal()"></div>
+      <div class="modal-box" id="modalBox"><div id="modalContent"></div></div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
